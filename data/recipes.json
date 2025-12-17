@@ -1,0 +1,274 @@
+[
+  {
+    "id": "r_001",
+    "title": "Паста с томатами и базиликом",
+    "description": "Быстро, просто и очень вкусно — классика на каждый день.",
+    "tags": ["quick", "vegetarian", "dinner"],
+    "time": 20,
+    "difficulty": "easy",
+    "servings": 2,
+    "image": "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Спагетти", "amount": 200, "unit": "г" },
+      { "name": "Томаты", "amount": 3, "unit": "шт" },
+      { "name": "Оливковое масло", "amount": 2, "unit": "ст.л." },
+      { "name": "Чеснок", "amount": 2, "unit": "зуб." },
+      { "name": "Базилик", "amount": 1, "unit": "пучок" }
+    ],
+    "steps": [
+      "Отварите пасту до al dente.",
+      "Обжарьте чеснок и томаты.",
+      "Смешайте с пастой и добавьте базилик."
+    ],
+    "createdAt": "2025-10-12"
+  },
+
+  {
+    "id": "r_002",
+    "title": "Омлет с сыром и зеленью",
+    "description": "Идеальный быстрый завтрак.",
+    "tags": ["quick", "breakfast", "vegetarian"],
+    "time": 10,
+    "difficulty": "easy",
+    "servings": 1,
+    "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Яйца", "amount": 2, "unit": "шт" },
+      { "name": "Молоко", "amount": 40, "unit": "мл" },
+      { "name": "Сыр", "amount": 40, "unit": "г" },
+      { "name": "Зелень", "amount": 10, "unit": "г" }
+    ],
+    "steps": [
+      "Взбейте яйца с молоком.",
+      "Обжарьте на сковороде.",
+      "Добавьте сыр и зелень."
+    ],
+    "createdAt": "2025-11-01"
+  },
+
+  {
+    "id": "r_003",
+    "title": "Курица терияки с рисом",
+    "description": "Сытный азиатский ужин.",
+    "tags": ["dinner"],
+    "time": 35,
+    "difficulty": "medium",
+    "servings": 2,
+    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Куриное филе", "amount": 350, "unit": "г" },
+      { "name": "Рис", "amount": 160, "unit": "г" },
+      { "name": "Соус терияки", "amount": 4, "unit": "ст.л." }
+    ],
+    "steps": [
+      "Сварите рис.",
+      "Обжарьте курицу.",
+      "Добавьте соус и подавайте."
+    ],
+    "createdAt": "2025-09-20"
+  },
+
+  {
+    "id": "r_004",
+    "title": "Овсянка с ягодами",
+    "description": "Полезный завтрак на каждый день.",
+    "tags": ["breakfast", "vegetarian"],
+    "time": 8,
+    "difficulty": "easy",
+    "servings": 1,
+    "image": "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Овсяные хлопья", "amount": 60, "unit": "г" },
+      { "name": "Молоко", "amount": 200, "unit": "мл" },
+      { "name": "Ягоды", "amount": 50, "unit": "г" }
+    ],
+    "steps": [
+      "Сварите овсянку.",
+      "Добавьте ягоды перед подачей."
+    ],
+    "createdAt": "2025-12-01"
+  },
+
+  {
+    "id": "r_005",
+    "title": "Салат Цезарь с курицей",
+    "description": "Классический салат с хрустящими сухариками.",
+    "tags": ["dinner"],
+    "time": 25,
+    "difficulty": "medium",
+    "servings": 2,
+    "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Куриное филе", "amount": 300, "unit": "г" },
+      { "name": "Салат ромэн", "amount": 150, "unit": "г" },
+      { "name": "Сухарики", "amount": 50, "unit": "г" },
+      { "name": "Соус Цезарь", "amount": 3, "unit": "ст.л." }
+    ],
+    "steps": [
+      "Обжарьте курицу.",
+      "Смешайте салат с соусом.",
+      "Добавьте курицу и сухарики."
+    ],
+    "createdAt": "2025-08-18"
+  },
+
+  {
+    "id": "r_006",
+    "title": "Овощной крем-суп",
+    "description": "Нежный и лёгкий суп.",
+    "tags": ["vegetarian", "dinner"],
+    "time": 45,
+    "difficulty": "easy",
+    "servings": 3,
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Картофель", "amount": 3, "unit": "шт" },
+      { "name": "Морковь", "amount": 1, "unit": "шт" },
+      { "name": "Лук", "amount": 1, "unit": "шт" },
+      { "name": "Сливки", "amount": 100, "unit": "мл" }
+    ],
+    "steps": [
+      "Отварите овощи.",
+      "Пробейте блендером.",
+      "Добавьте сливки."
+    ],
+    "createdAt": "2025-07-30"
+  },
+
+  {
+    "id": "r_007",
+    "title": "Банановые панкейки",
+    "description": "Нежные панкейки без сахара.",
+    "tags": ["breakfast", "dessert"],
+    "time": 20,
+    "difficulty": "easy",
+    "servings": 2,
+    "image": "https://images.unsplash.com/photo-1509482560494-4126f8225994?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Банан", "amount": 2, "unit": "шт" },
+      { "name": "Яйца", "amount": 2, "unit": "шт" },
+      { "name": "Мука", "amount": 120, "unit": "г" }
+    ],
+    "steps": [
+      "Разомните бананы.",
+      "Смешайте с яйцами и мукой.",
+      "Обжарьте панкейки."
+    ],
+    "createdAt": "2025-11-20"
+  },
+
+  {
+    "id": "r_008",
+    "title": "Спагетти карбонара",
+    "description": "Итальянская классика.",
+    "tags": ["dinner"],
+    "time": 25,
+    "difficulty": "medium",
+    "servings": 2,
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Спагетти", "amount": 200, "unit": "г" },
+      { "name": "Бекон", "amount": 120, "unit": "г" },
+      { "name": "Яйца", "amount": 2, "unit": "шт" },
+      { "name": "Пармезан", "amount": 40, "unit": "г" }
+    ],
+    "steps": [
+      "Отварите пасту.",
+      "Обжарьте бекон.",
+      "Смешайте всё с яйцами и сыром."
+    ],
+    "createdAt": "2025-09-05"
+  },
+
+  {
+    "id": "r_009",
+    "title": "Греческий салат",
+    "description": "Свежий и лёгкий салат.",
+    "tags": ["vegetarian", "quick", "dinner"],
+    "time": 10,
+    "difficulty": "easy",
+    "servings": 2,
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Огурцы", "amount": 2, "unit": "шт" },
+      { "name": "Помидоры", "amount": 2, "unit": "шт" },
+      { "name": "Фета", "amount": 100, "unit": "г" },
+      { "name": "Оливки", "amount": 50, "unit": "г" }
+    ],
+    "steps": [
+      "Нарежьте овощи.",
+      "Добавьте фету и оливки.",
+      "Заправьте маслом."
+    ],
+    "createdAt": "2025-08-01"
+  },
+
+  {
+    "id": "r_010",
+    "title": "Шоколадный брауни",
+    "description": "Насыщенный шоколадный десерт.",
+    "tags": ["dessert"],
+    "time": 40,
+    "difficulty": "medium",
+    "servings": 6,
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Шоколад", "amount": 200, "unit": "г" },
+      { "name": "Масло сливочное", "amount": 150, "unit": "г" },
+      { "name": "Яйца", "amount": 3, "unit": "шт" },
+      { "name": "Сахар", "amount": 120, "unit": "г" },
+      { "name": "Мука", "amount": 100, "unit": "г" }
+    ],
+    "steps": [
+      "Растопите шоколад с маслом.",
+      "Добавьте яйца и сахар.",
+      "Вмешайте муку и выпекайте."
+    ],
+    "createdAt": "2025-12-05"
+  },
+
+  {
+    "id": "r_011",
+    "title": "Рис с овощами",
+    "description": "Простой гарнир или самостоятельное блюдо.",
+    "tags": ["vegetarian", "quick"],
+    "time": 20,
+    "difficulty": "easy",
+    "servings": 2,
+    "image": "https://images.unsplash.com/photo-1512058564366-c9e7b1644f8b?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Рис", "amount": 160, "unit": "г" },
+      { "name": "Овощная смесь", "amount": 200, "unit": "г" },
+      { "name": "Соевый соус", "amount": 1, "unit": "ст.л." }
+    ],
+    "steps": [
+      "Сварите рис.",
+      "Обжарьте овощи.",
+      "Смешайте с соевым соусом."
+    ],
+    "createdAt": "2025-10-01"
+  },
+
+  {
+    "id": "r_012",
+    "title": "Яблочная шарлотка",
+    "description": "Домашний пирог к чаю.",
+    "tags": ["dessert"],
+    "time": 50,
+    "difficulty": "medium",
+    "servings": 6,
+    "image": "https://images.unsplash.com/photo-1605478901654-7e6f58c0a3c7?auto=format&fit=crop&w=1400&q=80",
+    "ingredients": [
+      { "name": "Яблоки", "amount": 4, "unit": "шт" },
+      { "name": "Яйца", "amount": 3, "unit": "шт" },
+      { "name": "Сахар", "amount": 150, "unit": "г" },
+      { "name": "Мука", "amount": 150, "unit": "г" }
+    ],
+    "steps": [
+      "Взбейте яйца с сахаром.",
+      "Добавьте муку.",
+      "Выложите яблоки и выпекайте."
+    ],
+    "createdAt": "2025-09-28"
+  }
+]

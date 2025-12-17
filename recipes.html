@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Рецепты — TastyPages</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="pagehead">
+      <div>
+        <h1 class="h1">Каталог рецептов</h1>
+        <p class="muted">Поиск, фильтры, сортировка — всё на чистом JS.</p>
+      </div>
+      <div class="pagehead__right">
+        <a class="btn" href="favorites.html">❤️ Избранное</a>
+        <a class="btn" href="shopping.html">🛒 Покупки</a>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="sidebar card">
+        <div class="sidebar__title">Фильтры</div>
+
+        <div class="field">
+          <label class="label">Поиск</label>
+          <input id="f-q" class="input" placeholder="паста, курица, салат..." />
+        </div>
+
+        <div class="field">
+          <label class="label">Тег</label>
+          <select id="f-tag" class="input">
+            <option value="">Любой</option>
+            <option value="quick">quick</option>
+            <option value="vegetarian">vegetarian</option>
+            <option value="breakfast">breakfast</option>
+            <option value="dessert">dessert</option>
+            <option value="dinner">dinner</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="label">Время (макс.)</label>
+          <select id="f-timeMax" class="input">
+            <option value="">Любое</option>
+            <option value="15">до 15 мин</option>
+            <option value="20">до 20 мин</option>
+            <option value="30">до 30 мин</option>
+            <option value="45">до 45 мин</option>
+            <option value="60">до 60 мин</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="label">Сложность</label>
+          <select id="f-difficulty" class="input">
+            <option value="">Любая</option>
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="label">Сортировка</label>
+          <select id="f-sort" class="input">
+            <option value="popular">popular</option>
+            <option value="new">new</option>
+            <option value="time">time</option>
+            <option value="title">title</option>
+          </select>
+        </div>
+
+        <div class="row gap-8">
+          <button id="apply" class="btn btn--primary" type="button">Применить</button>
+          <button id="reset" class="btn" type="button">Сброс</button>
+        </div>
+
+        <div class="divider"></div>
+        <p class="muted small">Совет: фильтры сохраняются в URL — можно делиться ссылкой.</p>
+      </aside>
+
+      <section class="content">
+        <div class="content__bar">
+          <div class="muted" id="result-count">—</div>
+          <button class="btn btn--ghost" id="scroll-top" type="button">↑ Наверх</button>
+        </div>
+
+        <div id="recipes-grid" class="grid grid--cards"></div>
+
+        <div class="center pad-24">
+          <button id="load-more" class="btn" type="button">Показать ещё</button>
+        </div>
+
+        <div id="empty" class="empty hidden">
+          <div class="empty__icon">🍽️</div>
+          <div class="empty__title">Ничего не найдено</div>
+          <div class="muted">Попробуйте изменить фильтры или поиск.</div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script type="module">
+    import { boot } from "./js/app.js";
+    import { initRecipesPage } from "./js/pages/recipes.js";
+    boot();
+    initRecipesPage();
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Избранное — TastyPages</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="pagehead">
+      <div>
+        <h1 class="h1">Избранное</h1>
+        <p class="muted">Ваши любимые рецепты — хранятся локально в браузере.</p>
+      </div>
+      <div class="pagehead__right">
+        <a class="btn" href="recipes.html">← В каталог</a>
+      </div>
+    </section>
+
+    <div id="favorites-grid" class="grid grid--cards"></div>
+
+    <div id="fav-empty" class="empty hidden">
+      <div class="empty__icon">❤️</div>
+      <div class="empty__title">Пока пусто</div>
+      <div class="muted">Добавьте рецепт в избранное, нажав сердечко.</div>
+      <div class="pad-16">
+        <a class="btn btn--primary" href="recipes.html">Перейти в каталог</a>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script type="module">
+    import { boot } from "./js/app.js";
+    import { initFavoritesPage } from "./js/pages/favorites.js";
+    boot();
+    initFavoritesPage();
+  </script>
+</body>
+</html>

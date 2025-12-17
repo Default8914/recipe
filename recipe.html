@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Рецепт — TastyPages</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <div id="recipe-root"></div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script type="module">
+    import { boot } from "./js/app.js";
+    import { initRecipePage } from "./js/pages/recipe.js";
+    boot();
+    initRecipePage();
+  </script>
+</body>
+</html>

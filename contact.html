@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — TastyPages</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="pagehead">
+      <div>
+        <h1 class="h1">Контакты</h1>
+        <p class="muted">Форма без бэкенда: валидация + приятные подсказки.</p>
+      </div>
+    </section>
+
+    <section class="card pad-24">
+      <form id="contact-form" class="stack gap-12">
+        <div class="field">
+          <label class="label">Имя</label>
+          <input class="input" name="name" placeholder="Иван" required minlength="2" />
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <input class="input" name="email" type="email" placeholder="ivan@mail.com" required />
+        </div>
+
+        <div class="field">
+          <label class="label">Сообщение</label>
+          <textarea class="input" name="message" rows="5" placeholder="Что вы хотите предложить?" required minlength="10"></textarea>
+        </div>
+
+        <div class="row gap-8">
+          <button class="btn btn--primary" type="submit">Отправить</button>
+          <button class="btn" type="reset">Очистить</button>
+        </div>
+
+        <div id="contact-status" class="muted"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script type="module">
+    import { boot } from "./js/app.js";
+    import { initContactPage } from "./js/pages/contact.js";
+    boot();
+    initContactPage();
+  </script>
+</body>
+</html>

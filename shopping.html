@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Список покупок — TastyPages</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="pagehead">
+      <div>
+        <h1 class="h1">Список покупок</h1>
+        <p class="muted">Добавляйте ингредиенты из рецептов — отмечайте купленное.</p>
+      </div>
+      <div class="pagehead__right">
+        <button id="copy" class="btn" type="button">📋 Копировать</button>
+        <button id="clearBought" class="btn" type="button">🧹 Удалить купленное</button>
+        <button id="clearAll" class="btn btn--danger" type="button">🗑 Очистить всё</button>
+      </div>
+    </section>
+
+    <div id="shopping-list" class="card pad-16"></div>
+
+    <div id="shop-empty" class="empty hidden">
+      <div class="empty__icon">🛒</div>
+      <div class="empty__title">Список пуст</div>
+      <div class="muted">Откройте рецепт и нажмите “Добавить ингредиенты”.</div>
+      <div class="pad-16">
+        <a class="btn btn--primary" href="recipes.html">Найти рецепт</a>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script type="module">
+    import { boot } from "./js/app.js";
+    import { initShoppingPage } from "./js/pages/shopping.js";
+    boot();
+    initShoppingPage();
+  </script>
+</body>
+</html>

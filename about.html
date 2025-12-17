@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>О проекте — TastyPages</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="pagehead">
+      <div>
+        <h1 class="h1">О проекте</h1>
+        <p class="muted">Демо-сайт рецептов на HTML/CSS/JS: темы, порции, избранное, покупки.</p>
+      </div>
+    </section>
+
+    <section class="card pad-24 prose">
+      <h2>Что внутри</h2>
+      <ul>
+        <li>Каталог с поиском/фильтрами/сортировкой</li>
+        <li>Страница рецепта с пересчётом порций</li>
+        <li>Избранное и список покупок в localStorage</li>
+        <li>Светлая/тёмная тема</li>
+      </ul>
+      <p class="muted">Можно расширять: авторизация, база данных, комментарии, рейтинги, загрузка фото.</p>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script type="module">
+    import { boot } from "./js/app.js";
+    boot();
+  </script>
+</body>
+</html>

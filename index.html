@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TastyPages — рецепты</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="site-header"></header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">TastyPages</h1>
+          <p class="hero__subtitle">Красивые рецепты. Удобный поиск. Порции пересчитываются автоматически.</p>
+
+          <form class="searchbar" id="home-search">
+            <input class="input" name="q" placeholder="Например: паста, курица, десерт..." autocomplete="off" />
+            <button class="btn btn--primary" type="submit">Найти</button>
+          </form>
+
+          <div class="chips">
+            <a class="chip" href="recipes.html?tag=quick">⏱ Быстро</a>
+            <a class="chip" href="recipes.html?tag=vegetarian">🥗 Вегетарианское</a>
+            <a class="chip" href="recipes.html?tag=breakfast">🍳 Завтраки</a>
+            <a class="chip" href="recipes.html?tag=dessert">🍰 Десерты</a>
+          </div>
+        </div>
+
+        <div class="hero__card card">
+          <div class="card__title">Подборка дня</div>
+          <div id="home-featured" class="stack gap-12"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Популярное</h2>
+          <a class="link" href="recipes.html?sort=popular">Смотреть всё →</a>
+        </div>
+        <div id="home-popular" class="grid grid--cards"></div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">До 20 минут</h2>
+          <a class="link" href="recipes.html?timeMax=20">Смотреть всё →</a>
+        </div>
+        <div id="home-quick" class="grid grid--cards"></div>
+      </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script type="module">
+    import { boot } from "./js/app.js";
+    import { initHomePage } from "./js/pages/home.js";
+    boot();
+    initHomePage();
+  </script>
+</body>
+</html>
